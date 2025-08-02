@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Grocery Store{% endblock %}</title>
+    {% if pdf %}
+    <link rel="stylesheet" href="file:///C:/Users/Gandhamalla%20Bhavani/Desktop/Grocery_store_billing_and_inventory_system/static/style.css">
+    {% else %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% endif %}
+</head>
+<body{% if request.endpoint == 'billing' %} class="billing-page"{% endif %}>
+    {% block content %}{% endblock %}
+</body>
+</html>

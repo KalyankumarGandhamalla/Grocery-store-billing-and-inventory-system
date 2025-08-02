@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Billing</h2>
+    <form method="post">
+        <table border="1">
+            <tr>
+                <th>Product</th><th>Available</th><th>Price</th><th>Quantity</th>
+            </tr>
+            {% for product in products %}
+            <tr>
+                <td>{{ product.name }}</td>
+                <td>{{ product.quantity }}</td>
+                <td>{{ product.price }}</td>
+                <td><input type="number" name="qty_{{ product.id }}" min="0" max="{{ product.quantity }}" value="0"></td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br>
+        <button type="submit">Generate Bill</button>
+    </form>
+    <br><a href="/dashboard">Back</a>
+{% endblock %}
+</body>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - Grocery Store</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Register</h2>
+    <form action="/register" method="post">
+        <label>Username:</label><br>
+        <input type="text" name="username" required><br>
+        <label>Password:</label><br>
+        <input type="password" name="password" required><br>
+        <label>Role:</label><br>
+        <select name="role" required>
+            <option value="admin">Admin</option>
+            <option value="cashier">Cashier</option>
+        </select><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

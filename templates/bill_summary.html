@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Bill Summary</h2>
+    <table border="1">
+        <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price (each)</th>
+            <th>Total</th>
+        </tr>
+        {% for item in items %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.qty }}</td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.qty * item.price }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td colspan="3"><strong>Grand Total</strong></td>
+            <td><strong>{{ total }}</strong></td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="window.print()">Print Bill</button>
+    <span style="display:inline-block; width: 60px;"></span>
+    <a href="{{ url_for('billing') }}">Back to Billing</a>
+{% endblock %}

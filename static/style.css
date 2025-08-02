@@ -1,0 +1,136 @@
+/* Light grey background for billing table */
+body.billing-page table {
+    background-color: #f2f2f2;
+    color: #222;
+}
+/* Dashboard admin buttons */
+.dashboard-buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.dashboard-btn {
+    display: inline-block;
+    background: #fff;
+    color: #db3434;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 18px 38px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s;
+}
+.dashboard-btn:hover {
+    background: #db3434;
+    color: #fff;
+}
+/* Light grey background for inventory table body */
+body.inventory-page table tbody tr {
+    background-color: #f2f2f2;
+    color: #222;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-image: url("file:///C:/Users/Gandhamalla%20Bhavani/Desktop/Grocery_store_billing_and_inventory_system/static/backgroundimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color:white;
+    position:center;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: -1;
+}
+
+h2 {
+    color:white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("/static/backgroundimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+input[type="password"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+button {
+    padding: 8px 14px;
+    background-color: #db3434;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    margin: 0 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
