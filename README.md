@@ -40,7 +40,7 @@ Below are some example screenshots of the application:
 ### Setup Instructions
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/KalyankumarGandhamalla/Grocery-store-billing-and-inventory-system.git
    ```
 2. Install dependencies:
    ```
